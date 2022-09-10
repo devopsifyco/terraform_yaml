@@ -1,0 +1,8 @@
+Gitlab:
+  - project_name: project-one-sit
+    group_path: quannhm/nguyen/hoang/minh
+    description: create by terraform
+    member:
+      - role: Security
+        username: abc
+        expires_at: "2022-12-31"
