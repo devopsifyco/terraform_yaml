@@ -5,39 +5,34 @@
 |------|---------|
 | <a name="requirement_gitlab"></a> [gitlab](#requirement\_gitlab) | 3.16.1 |
 | <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.35.0 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.35.0 |
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_gitlab"></a> [gitlab](#provider\_gitlab) | 3.16.1 |
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | ~> 0.35.0 ~> 0.35.0 |
+No providers.
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_create_project"></a> [create\_project](#module\_create\_project) | ./modules/project | n/a |
+| <a name="module_invitation_users"></a> [invitation\_users](#module\_invitation\_users) | ./modules/invitation_users | n/a |
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [gitlab_repository_file.main](https://registry.terraform.io/providers/gitlabhq/gitlab/3.16.1/docs/resources/repository_file) | resource |
-| [tfe_workspace.test](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/workspace) | resource |
-| [gitlab_project.main](https://registry.terraform.io/providers/gitlabhq/gitlab/3.16.1/docs/data-sources/project) | data source |
+No resources.
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_gitlab_namespace"></a> [gitlab\_namespace](#input\_gitlab\_namespace) | path namespace with project name | `string` | `""` | no |
-| <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | pesonal token | `string` | `""` | no |
-| <a name="input_hostname"></a> [hostname](#input\_hostname) | n/a | `string` | `""` | no |
-| <a name="input_organization"></a> [organization](#input\_organization) | n/a | `string` | `""` | no |
-| <a name="input_token"></a> [token](#input\_token) | n/a | `string` | `""` | no |
-| <a name="input_workspace"></a> [workspace](#input\_workspace) | n/a | `string` | `""` | no |
+| <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | default\_branch | `string` | `"main"` | no |
+| <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | pesonal token | `string` | n/a | yes |
+| <a name="input_visibility"></a> [visibility](#input\_visibility) | can be private, internal, public | `string` | `"private"` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_module"></a> [module](#output\_module) | n/a |
+| <a name="output_project_id"></a> [project\_id](#output\_project\_id) | n/a |
 <!-- END_TF_DOCS -->
