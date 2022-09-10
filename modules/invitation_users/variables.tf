@@ -3,9 +3,9 @@ variable "project_membership" {
     the map of project membership
     i.e the list looks as follows
     {
-        "nguyentrungtinc4nh1516@gmail.com" = "AppOps"
-        "tinhphamtrung00@gmail.com" = "Owner"
-        "vubuivn@gmail.com" = "Mgmt"
+        "abc" = "AppOps"
+        "xyz = "Owner"
+        "xxx" = "Mgmt"
     }
     EOF
   type        = map(any)
